@@ -1,4 +1,5 @@
 // Define mixins with specific functionalities
+
 const Printable = {
     print() {
       console.log(this.content);
@@ -18,9 +19,12 @@ const Printable = {
     }
   }
   
+
   // Applying mixins to the class
   Object.assign(MyCombinedClass.prototype, Printable, Serializable);
   
+
+
   // Usage
   const myObj = new MyCombinedClass('Sample Content');
   myObj.print(); // Output: Sample Content
